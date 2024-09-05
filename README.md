@@ -32,7 +32,7 @@ replace the icon image
 $target the item on the desktop  
 $icon the icon file  
 
-For example the 'target of my 3D printer shortcut on its properties page is:  
+For example the 'target' of my 3D printer shortcut on its properties page is:  
 (please excuse the line breaks which are needed to get it on screen here)  
 &nbsp;&nbsp;&nbsp;&nbsp;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe   
 &nbsp;&nbsp;&nbsp;&nbsp;D:\Util\hass.ps1  
@@ -44,13 +44,14 @@ For example the 'target of my 3D printer shortcut on its properties page is:
 
 However that doesn't keep up with 'off line' changes so I decided I needed a
 script that run at startup (or return from hibernate) to do stuff so I called
-it AutoExec.ps1 and put it on the D: drive because windows makes such a song
-and dance about C:\  
+it AutoExec.ps1 and put it on the D: drive because Windows makes such a song
+and dance about touching C:\  
 
-The trigger is and example to import into the Task Scheduler Library but don't
-forget to edit in your own username/ID and provide the appropriate password. 
+AutoExec.xml is an example to import into the Task Scheduler Library but don't
+forget to edit in your own username/ID and when it saves you provide the
+appropriate username/password so it can execute. 
 
-My AutoExec.psi contains the line  
+My AutoExec.ps1 contains the line  
 &nbsp;&nbsp;&nbsp;&nbsp;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  
 &nbsp;&nbsp;&nbsp;&nbsp;D:\Util\hass.ps1  
 &nbsp;&nbsp;&nbsp;&nbsp;-domain switch  
@@ -61,4 +62,4 @@ My AutoExec.psi contains the line
 
 
 I hope that this is readable. I really hate MarkDown. Anything that uses white
-space syntactically is evil.
+space syntactically is manifestly evil.
