@@ -40,7 +40,7 @@ Function Get-HassURL
 
 Function Get-HassToken
 {
-    'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkZWViMWI0MDk1ZDY0MDZjYTg0Yzg5ZjU4YjRmNmI2MSIsImlhdCI6MTcyMjE5NTIyNSwiZXhwIjoyMDM3NTU1MjI1fQ.aPcw8vgzhJuWdJRkYlXwcpdh4a369TZdxs3mZNZx5G8'
+    'Bearer --- stuff ---'
 }
 
 Function Set-Hass {
