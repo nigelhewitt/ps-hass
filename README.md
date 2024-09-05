@@ -35,10 +35,26 @@ $icon the icon file
 For example the 'target of my 3D printer shortcut on its properties page is:  
 (please excuse the line breaks which are needed to get it on screen here)  
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe   
-     D:\Util\hass.ps1  
-     -domain switch -action toggle  
-     -object switch.smart_plug_mini_switch  
-     -link 3DPrinter.lnk  
-     -officon "D:\Util\power-red-64.ico"  
-     -onicon "D:\Util\power-green-64.ico"
+    D:\Util\hass.ps1  
+    -domain switch -action toggle  
+    -object switch.smart_plug_mini_switch  
+    -link 3DPrinter.lnk  
+    -officon "D:\Util\power-red-64.ico"  
+    -onicon "D:\Util\power-green-64.ico"
 
+However that doesn't keep up with 'off line' changes so I decided I needed a
+script that run at startup (or return from hibernate) to do stuff so I called
+it AutoExec.ps1 and put it on the D: drive because windows makes such a song
+and dance about C:\  
+
+The trigger is and example to import into the Task Scheduler Library but don't
+forget to edit in your own usename/ID and provice the appropriate password. 
+
+My AutoExec.psi contains the line  
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  
+D:\Util\hass.ps1  
+    -domain switch  
+    -object switch.smart_plug_mini_switch    
+    -link 3DPrinter.lnk  
+    -officon "D:\Util\power-red-64.ico"   
+    -onicon "D:\Util\power-green-64.ico"
