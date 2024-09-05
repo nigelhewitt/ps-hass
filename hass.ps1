@@ -87,7 +87,7 @@ if($action -ne $null){
 # if there is a link update the shortcut icon
 if($link -ne $null){
    $x = Get-Hass -object $object
-   if($x.state -match 'on'){ $icon = $onicon }
-   else					{ $icon = $officon   }
+   if($x.state -match 'on'){ $icon = $onicon  }
+   else					   { $icon = $officon }
    Set-ShortcutIcon -target $link  -icon $icon
 }

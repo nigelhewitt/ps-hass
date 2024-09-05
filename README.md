@@ -36,7 +36,8 @@ For example the 'target' of my 3D printer shortcut on its properties page is:
 (please excuse the line breaks which are needed to get it on screen here)  
 &nbsp;&nbsp;&nbsp;&nbsp;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe   
 &nbsp;&nbsp;&nbsp;&nbsp;D:\Util\hass.ps1  
-&nbsp;&nbsp;&nbsp;&nbsp;-domain switch -action toggle  
+&nbsp;&nbsp;&nbsp;&nbsp;-domain switch  
+&nbsp;&nbsp;&nbsp;&nbsp;-action toggle  
 &nbsp;&nbsp;&nbsp;&nbsp;-object switch.smart_plug_mini_switch  
 &nbsp;&nbsp;&nbsp;&nbsp;-link 3DPrinter.lnk  
 &nbsp;&nbsp;&nbsp;&nbsp;-officon "D:\Util\power-red-64.ico"  
