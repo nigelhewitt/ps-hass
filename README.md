@@ -11,11 +11,11 @@ function (details later) and the HA URL.
 
 I wrote a script hass.ps1 that contains the working functions
 
-Set-Hass -domain $domain -object $object -action $action
-set the state of an object
-$domain is the type eg: switch
-$object is the item eg: switch.lamp1
-$action is what to do eg: turn_on turn_off toggle
+Set-Hass -domain $domain -object $object -action $action  
+set the state of an object  
+$domain is the type eg: switch  
+$object is the item eg: switch.lamp1  
+$action is what to do eg: turn_on turn_off toggle  
 returns nothing
 
 Get-Hass -object $object
