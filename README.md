@@ -1,13 +1,13 @@
 # ps-hass
 
 So I wanted to put icons on my desktop to switch things in my Home Assistant
-smart home system. eg: the Laptop wanted to toggle its charger and the desktop
-wanted to power up the 3D printer.
+smart home system. eg: the Laptop wanted to toggle its charger on and off and
+the desktop wanted to power up the 3D printer.
 
 Now HA offers a REST API so the obvious tool was Powershell.
 
 For that you need a token so HA knows you're the right person which is a HA
-function (details later) and the HA URL.
+function and the HA URL.
 
 I wrote a script hass.ps1 that contains the working functions which are:
 
@@ -52,7 +52,7 @@ AutoExec.xml is an example to import into the Task Scheduler Library but don't
 forget to edit in your own username/ID and when it saves you provide the
 appropriate username/password so it can execute. 
 
-My AutoExec.ps1 contains the line  
+My D:/AutoExec.ps1 contains the line  
 &nbsp;&nbsp;&nbsp;&nbsp;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  
 &nbsp;&nbsp;&nbsp;&nbsp;D:\Util\hass.ps1  
 &nbsp;&nbsp;&nbsp;&nbsp;-domain switch  
